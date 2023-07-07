@@ -3,6 +3,9 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 /[Ll]ibrary/
+What Are You Gosling Test/[Ll]ibrary/
+What Are You Gosling Test/Library/
+What Are You Gosling Test/Library/*
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
