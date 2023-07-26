@@ -13,16 +13,16 @@ public class QuestionCount : MonoBehaviour
     void Start()
     {
         score = 0;
-        questionScoreText.text = score + "/85";
+        questionScoreText.text = score + "/100";
     }
     
     public void OnClickScore()
     {
-        if (score == 85)
+        if (score == 100)
         {
             Destroy(questionScoreText);
         }
         score++;
-        questionScoreText.text = score + "/85";
+        questionScoreText.text = score + "/100";
     }
 }

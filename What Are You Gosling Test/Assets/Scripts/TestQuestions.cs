@@ -24,14 +24,14 @@ public class TestQuestions : MonoBehaviour
 
     public void OnClickYesButton()
     {
-        if(numberQuetion < 85)
+        if(numberQuetion < 100)
         { 
             QuestionList currentQuestion = questions[numberQuetion];
             questionText.text = currentQuestion.question;
             testScore++;
             numberQuetion++;
         }
-        else if (numberQuetion == 85)
+        else if (numberQuetion == 100)
         {
             ScoreCounting();
         }
@@ -40,13 +40,13 @@ public class TestQuestions : MonoBehaviour
 
     public void OnClickNoButton()
     {
-        if(numberQuetion < 85)
+        if(numberQuetion < 100)
         { 
             QuestionList currentQuestion = questions[numberQuetion];
             questionText.text = currentQuestion.question;
             numberQuetion++;
         }
-        else if(numberQuetion == 85)
+        else if(numberQuetion == 100)
         {
             ScoreCounting();
         }
@@ -55,33 +55,33 @@ public class TestQuestions : MonoBehaviour
     private void ScoreCounting()
     {
         scorePanel.SetActive(true);
-        if(testScore < 20)
+        if(testScore < 30)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 5)).GoslingCollection.Image;
             finalText.text = "Вы Тачки Гослинг";
         }
-        else if (testScore > 20 && testScore < 30)
+        else if (testScore > 30 && testScore < 40)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 3)).GoslingCollection.Image;
             finalText.text = "Вы Славный Гослинг";
         }
-        else if (testScore > 30 && testScore < 40)
+        else if (testScore > 40 && testScore < 50)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 0)).GoslingCollection.Image;
             finalText.text = "Вы Барби Гослинг";
         }
-        else if (testScore > 40 && testScore < 50)
+        else if (testScore > 50 && testScore < 60)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 4)).GoslingCollection.Image;
             finalText.text = "Вы Гослинг пофигист";
         }
-        else if (testScore > 60 && testScore < 75)
+        else if (testScore > 70 && testScore < 85)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 2)).GoslingCollection.Image;
             finalText.text = "Вы Драйв Гослинг";
             
         }
-        else if (testScore > 75)
+        else if (testScore > 85)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 1)).GoslingCollection.Image;
             finalText.text = "Вы Бегущий по лезвию Гослинг";
