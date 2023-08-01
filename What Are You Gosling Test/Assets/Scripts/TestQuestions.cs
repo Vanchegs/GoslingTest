@@ -60,22 +60,22 @@ public class TestQuestions : MonoBehaviour
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 5)).GoslingCollection.Image;
             finalText.text = "Вы Тачки Гослинг";
         }
-        else if (testScore > 30 && testScore < 40)
+        else if (testScore >= 30 && testScore < 40)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 3)).GoslingCollection.Image;
             finalText.text = "Вы Славный Гослинг";
         }
-        else if (testScore > 40 && testScore < 50)
+        else if (testScore >= 40 && testScore < 50)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 0)).GoslingCollection.Image;
             finalText.text = "Вы Барби Гослинг";
         }
-        else if (testScore > 50 && testScore < 60)
+        else if (testScore >= 50 && testScore < 60)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 4)).GoslingCollection.Image;
             finalText.text = "Вы Гослинг пофигист";
         }
-        else if (testScore > 70 && testScore < 85)
+        else if (testScore >= 70 && testScore < 85)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 2)).GoslingCollection.Image;
             finalText.text = "Вы Драйв Гослинг";
