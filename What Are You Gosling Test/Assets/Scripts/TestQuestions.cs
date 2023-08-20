@@ -9,7 +9,10 @@ public class TestQuestions : MonoBehaviour
     [SerializeField] private TMP_Text questionText;
     [SerializeField] private TMP_Text finalText;
     [SerializeField] private GameObject scorePanel;
+    [SerializeField] private GameObject questionPanel;
     [SerializeField] private Image panelImage;
+    [SerializeField] GameObject buttonYes;
+    [SerializeField] GameObject buttonNo;
     [SerializeField] private List<PictureCollection> goslings = new List<PictureCollection>();
     private int numberQuetion;
     private string[] questionArray;
@@ -34,6 +37,9 @@ public class TestQuestions : MonoBehaviour
         else if (numberQuetion == 100)
         {
             ScoreCounting();
+            buttonNo.SetActive(false);
+            buttonYes.SetActive(false);
+            questionPanel.SetActive(false);
         }
     }
     
@@ -49,6 +55,9 @@ public class TestQuestions : MonoBehaviour
         else if(numberQuetion == 100)
         {
             ScoreCounting();
+            buttonNo.SetActive(false);
+            buttonYes.SetActive(false);
+            questionPanel.SetActive(false);
         }
     }
 
