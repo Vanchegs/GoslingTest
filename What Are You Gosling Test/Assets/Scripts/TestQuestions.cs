@@ -58,7 +58,7 @@ public class TestQuestions : MonoBehaviour
         if(testScore < 30)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 5)).GoslingCollection.Image;
-            finalText.text = "Вы Тачки Гослинг";
+            finalText.text = "Вы Обычный Гослинг";
         }
         else if (testScore >= 30 && testScore < 40)
         {
@@ -73,13 +73,12 @@ public class TestQuestions : MonoBehaviour
         else if (testScore >= 50 && testScore < 60)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 4)).GoslingCollection.Image;
-            finalText.text = "Вы Гослинг пофигист";
+            finalText.text = "Вы Гослинг в Красном";
         }
         else if (testScore >= 70 && testScore < 85)
         {
             panelImage.sprite = goslings.Find(((gosling) => gosling.GoslingCollection.id == 2)).GoslingCollection.Image;
             finalText.text = "Вы Драйв Гослинг";
-            
         }
         else if (testScore > 85)
         {
